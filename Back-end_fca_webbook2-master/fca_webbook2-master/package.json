@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "API advanced book",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node --require ./node-compat.js app.js"
+},
   "author": "CFP, DGC",
   "license": "ISC",
   "repository": {
@@ -37,8 +37,5 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^5.7.12",
     "nodemailer": "^6.3.1"
-  },
-  "overrides": {
-    "buffer-equal-constant-time": "npm:buffer-equal@1.0.0"
   }
 }
